@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgcolor: rgb(46, 46, 46);
+  --color: rgb(230, 229, 229);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bgcolor);
+  color: var(--color);
+  overflow: hidden;
+}
+
+div .main {
+  display: flex;
+}
+
+#listContacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  border-right: 2px solid var(--color);
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  height: 700px;
+  /* position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0; */
+}
+
+#search {
+  width: 100%;
+  /* border: 2px solid salmon; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#search form input, #search button {
+  border: 1px solid var(--color);
+  background-color: transparent;
+  color: var(--color);
+}
+
+#search form {
+  /* border: 2px solid blue; */
+  width: 80%;
+}
+
+#search form input {
+  width: 100%;
+  padding: 10px;
+}
+
+#search button {
+  cursor: pointer;
+  width: 40px;
+  font-size: 12pt;
+  font-weight: 800;
+  margin-left: 15px;
+}
+
+/* div form {
+  border: 2px solid salmon;
+} */
+
+#listItem {
+  width: 100%;
+  margin: 30px 0 0 0;
+  height: 600px;
+  /* border: 2px solid salmon; */
+  overflow-y: auto;
+
+}
+
+#itemContact {
+  display: flex;
+  width: 100%;
+  margin: 10px 0 30px 0;
+  border-bottom: 2px solid var(--color);
+}
+
+#imageContact img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 20px 0 10px;
+}
+
+#descContact h3 {
+  margin: 0 0 10px 0;
+}
+
+#descContact p {
+  font-size: 8pt;
+}
+
+#descContact p:nth-child(4) {
+  font-size: 12pt;
+  margin: 5px 0 0 0;
+}
+
+#itemContact button {
+  width: 50px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0px;
+  margin: 10px 0 0 0;
+}
+
+.btnUbah {
+  color: yellow;
+}
+.btnHapus {
+  color: red;
+}
+
+#addContact {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  width: 60%;
+  height: 500px;
+  margin: auto;
+}
+
+#adding {
+  display: flex;
+  flex-direction: column;
+}
+
+#adding h3 {
+  /* border: 2px solid blue; */
+  width: 20%;
+  margin: auto auto 0 auto;
+}
+
+#addContact label, #addContact input {
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+#addContact input {
+  border: 2px solid var(--color);
+  border-radius: 5px;
+  padding: 7px;
+  background-color: transparent;
+  color: var(--color);
+}
+
+#identity, #contactNum {
+  /* border: 2px solid blue; */
+  margin: 20px;
+}
+
+#contactNum div {
+  width: 60%;
+  /* border: 2px solid red; */
+  margin: 20px 0 0 auto;
+}
+
+#contactNum div button {
+  width: 100%;
+  padding: 7px;
+  cursor: pointer;
+  border: 2px solid var(--color);
+  border-radius: 7px;
+  background-color: transparent;
+  color: var(--color);
+}
+#contactNum div button:hover {
+  background-color: var(--color);
+  color: var(--bgcolor);
+  transition: 300ms;
+}
+
+.requiredStar {
+  color: salmon;
+}
+
+.emptyContact {
+  text-align: center;
+}
+
